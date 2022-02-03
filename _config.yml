@@ -1,3 +1,5 @@
 theme: jekyll-theme-architect
 domain: ryne.tech
 url: https://ryne.tech  # the base hostname and protocol for your site, e.g. http://example.com
+title: [ryne.tech]
+description: [Just testing Jekyll and Github Pages.]
