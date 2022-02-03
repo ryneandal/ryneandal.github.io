@@ -3,8 +3,15 @@ title: home
 ---
 
 ## Welcome to GitHub Pages
+
+## Posts:
 {% for post in site.posts %}
 - [ {{ post.title }} ]( {{ post.url }} )
+{% endfor %}
+
+## Pages:
+{% for page in site.pages %}
+- [ {{ page.title }} ]( {{ page.url }} )
 {% endfor %}
 
 You can use the [editor on GitHub](https://github.com/ryneandal/ryneandal.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
