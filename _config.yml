@@ -3,3 +3,4 @@ domain: ryneandal.com
 url: https://ryneandal.com  # the base hostname and protocol for your site, e.g. http://example.com
 title: Ryne Andal
 description: Just testing Jekyll and Github Pages.
+permalink: /:year/:month/:day/:title:output_ext
