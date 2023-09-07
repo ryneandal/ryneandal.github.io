@@ -6,7 +6,7 @@ title: home
 <ul>
 {% for post in site.posts %}
 <li> 
-    <a href="{{ post.url }}"{{ post.title }}</a>
+    [ {{ post.title }} ]( {{ post.url }} )
     {{ post.excerpt}}
 </li>
 {% endfor %}
