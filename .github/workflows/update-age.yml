@@ -1,0 +1,48 @@
+name: Update Age on Birthday
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs every day at 00:00 UTC
+  workflow_dispatch:     # Optional manual run
+
+jobs:
+  maybe-update-age:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check date and update config if it's your birthday
+        run: |
+          # Define values
+          FILE="_config.yml"
+          BIRTHDAY="09-21"  # MM-DD format
+          TODAY=$(date +"%m-%d")
+
+          # Exit if it's not your birthday
+          if [[ "$TODAY" != "$BIRTHDAY" ]]; then
+            echo "Not your birthday ($TODAY), exiting."
+            exit 0
+          fi
+
+          # Extract current age
+          current_age=$(grep -oP "\K[0-9]+" "$FILE")
+          expected_age=$(( $(date +%Y) - 1987 ))
+
+          if [[ "$current_age" -eq "$expected_age" ]]; then
+            echo "Age is already up to date ($current_age), nothing to do."
+            exit 0
+          fi
+
+          echo "Updating age from $current_age to $expected_age"
+
+          # Update the age
+          sed -i "s/37 year/$expected_age year/" "$FILE"
+
+          # Commit and push
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add "$FILE"
+          git commit -m "🎂 Auto-update age to $expected_age on birthday"
+          git push
