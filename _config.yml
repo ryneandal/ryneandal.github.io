@@ -2,5 +2,5 @@ theme: jekyll-theme-architect
 domain: ryneandal.com
 url: https://ryneandal.com  # the base hostname and protocol for your site, e.g. http://example.com
 title: Ryne Andal
-description: 37 year old Software Developer, Husband, Father.
+description: 38 year old Software Developer, Husband, Father.
 permalink: /:year/:month/:day/:title:output_ext
