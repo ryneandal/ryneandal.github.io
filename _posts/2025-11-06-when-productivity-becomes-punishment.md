@@ -20,7 +20,9 @@ seo:
 image: /assets/images/posts/burnout-reset-cover.jpg
 ---
 
-*“What looked like strength was actually survival.”*
+# When Productivity Becomes Punishment: Rebooting My Life After Burnout
+
+> *“What looked like strength was actually survival.”*
 
 For most of my adult life, I’ve been obsessed with progress. I measured my worth in commits, coursework, and creative output. I was always looking for the next thing to do, the next project to start, the next challenge to conquer. If I wasn’t building something, I was failing. I had to be busy. The idea of slowing down felt like weakness. Output was the measure of my worth.
 
@@ -126,7 +128,7 @@ It is not consistent, constant growth, there is often no progress. In fact, ther
 
 ---
 
-### References
+## References
 
 - PsychCentral. (2022). [*Productivity as a Trauma Response: Discover the “Busy Bee” Pattern*](https://psychcentral.com/health/discover-busy-bee-productivity-as-a-coping-response-to-trauma).  
 - Monteiro Ribeiro et al. (2025). *Software Engineering Instability and Burnout: Cognitive and Emotional Predictors.*  
