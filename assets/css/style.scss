@@ -3,6 +3,36 @@
 
 @import "{{ site.theme }}";
 
+/* Wider layout on large viewports (theme default is 940px / 690px main). */
+@media only screen and (min-width: 960px) {
+    .inner {
+        width: 1200px;
+    }
+
+    #main-content {
+        width: 950px;
+    }
+
+    footer {
+        width: 1200px;
+        margin: 40px auto 0;
+    }
+}
+
+a {
+    cursor: pointer;
+}
+
+/* Wrap long lines in fenced / highlighted blocks (theme uses pre { overflow: auto }). */
+#main-content pre,
+.highlight pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 header {
     a {
         color: #9ddcff;
@@ -23,6 +53,40 @@ header {
         }
     }
 }
+
+#sidebar .sidebar-recent-posts {
+    margin-top: 1.5em;
+
+    h3 {
+        margin: 0 0 0.65em;
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        margin: 0 0 0.85em;
+        line-height: 1.35;
+    }
+
+    a {
+        display: block;
+        font-weight: 600;
+    }
+
+    time {
+        display: block;
+        margin-top: 0.2em;
+        font-size: 0.8em;
+        opacity: 0.75;
+    }
+}
+
 figure figcaption {
     display: block;
     font-size: 0.85em;

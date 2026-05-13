@@ -20,7 +20,7 @@ seo:
 image: /assets/images/posts/burnout-reset-cover.jpg
 ---
 
-# When Productivity Becomes Punishment: Rebooting My Life After Burnout
+## When Productivity Becomes Punishment: Rebooting My Life After Burnout
 
 > *“What looked like strength was actually survival.”*
 

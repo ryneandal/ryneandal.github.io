@@ -30,11 +30,16 @@
       {% endif %}
       <nav>
         <ul>
-          {% for page in site.pages %}
-          <a href="{{ page.url }}">
-            <li>{{ page.title }}</li>
+          <a href="{{ '/' | relative_url }}">
+            <li>home</li>
           </a>
-          {% endfor %}
+
+          <a href="{{ '/about' | relative_url }}">
+            <li>about</li>
+          </a>
+          <a href="{{ '/ryne-andal-dnv-resume.pdf' | relative_url }}">
+            <li>resume</li>
+          </a>
         </ul>
       </nav>
     </div>
@@ -58,15 +63,24 @@
         </a>
         {% endif %}
 
-        {% if site.github.is_project_page %}
-        <p class="repo-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is
-          maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</p>
+        {% if site.posts.size > 0 %}
+        <div class="sidebar-recent-posts">
+          <h3>Recent posts</h3>
+          <ul>
+            {% for post in site.posts limit: 8 %}
+            <li>
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
         {% endif %}
       </aside>
     </div>
   </div>
   <footer>
-    <p>© 2026 Ryne Andal — reflections on engineering, AI, and the human side of productivity.</p>
+    <p>&copy; 2026 Ryne Andal — reflections on engineering, AI, and the human side of productivity.</p>
   </footer>
   <!-- Cloudflare Web Analytics -->
   <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
