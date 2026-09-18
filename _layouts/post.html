@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<article class="post">
+  <div class="post-header">
+    <h1>{{ page.title }}</h1>
+    <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+  </div>
+
+  {{ content }}
+</article>

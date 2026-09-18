@@ -4,3 +4,8 @@ url: https://ryneandal.github.io  # the base hostname and protocol for your site
 title: Ryne Andal
 description: 38 year old Software Developer, Husband, Father.
 permalink: /:year/:month/:day/:title:output_ext
+
+contact:
+  email: "ryne.andal@gmail.com"
+  whatsapp: "https://wa.me/34657039605"
+  linkedin: "https://www.linkedin.com/in/ryneandal"

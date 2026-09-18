@@ -1,0 +1,18 @@
+{%- assign contact_email = site.contact.email | default: '' | strip -%}
+{%- assign contact_whatsapp = site.contact.whatsapp | default: '' | strip -%}
+{%- assign contact_linkedin = site.contact.linkedin | default: '' | strip -%}
+{%- assign contact_separator = '' -%}
+{%- if contact_email != '' -%}
+  <a href="mailto:{{ contact_email | escape }}">Email</a>
+  {%- assign contact_separator = ' · ' -%}
+{%- endif -%}
+{%- if contact_whatsapp != '' -%}
+  {{ contact_separator }}<a href="{{ contact_whatsapp | escape }}">WhatsApp</a>
+  {%- assign contact_separator = ' · ' -%}
+{%- endif -%}
+{%- if contact_linkedin != '' -%}
+  {{ contact_separator }}<a href="{{ contact_linkedin | escape }}">LinkedIn</a>
+{%- endif -%}
+{%- if contact_email == '' and contact_whatsapp == '' and contact_linkedin == '' -%}
+  <a href="{{ '/ryne-andal-dnv-resume.pdf' | relative_url }}">My CV</a>
+{%- endif -%}
