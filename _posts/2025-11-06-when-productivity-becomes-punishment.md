@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "When Productivity Becomes Punishment: Rebooting My Life After Burnout"
 date: 2025-11-06
 categories: 
@@ -12,15 +13,13 @@ excerpt: >
   and learning that healing means doing differently—not doing more.
 author: Ryne Andal
 tags: [burnout, trauma-response, software-engineering, mental-health, life-reset]
-canonical_url: https://ryneandal.com/2025/11/06/when-productivity-becomes-punishment
+canonical_url: https://ryneandal.github.io/2025/11/06/when-productivity-becomes-punishment
 permalink: /2025/11/06/when-productivity-becomes-punishment
 seo:
   description: "A software engineer and father of four shares how chronic overproductivity became a trauma response, leading to burnout, collapse, and a life reset abroad."
   keywords: "burnout, productivity trauma, allostatic load, stress performance curve, cognitive resource depletion, Monteiro Ribeiro 2025, McEwen 1998, Franklin Lerman Hodas 2017"
 image: /assets/images/posts/burnout-reset-cover.jpg
 ---
-
-## When Productivity Becomes Punishment: Rebooting My Life After Burnout
 
 > *“What looked like strength was actually survival.”*
 

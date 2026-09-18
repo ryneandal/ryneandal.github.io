@@ -54,6 +54,23 @@ a {
     font-size: 0.9em;
 }
 
+#main-content table,
+#main-content .mermaid {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+#main-content table {
+    display: block;
+}
+
+#main-content .mermaid svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
 header {
     a {
         color: #9ddcff;

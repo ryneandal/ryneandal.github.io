@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Why PDFs Are a Security Nightmare"
 date: 2026-05-22
 categories: 
@@ -9,15 +10,13 @@ excerpt: >
   PDFs are a security nightmare because they became a mandatory part of online business while they accumulated more features and technical debt over time.
 author: Ryne Andal
 tags: ["cybersecurity", "PDF", "security"]
-canonical_url: https://ryneandal.com/2026/05/22/why-pdfs-are-a-security-nightmare
+canonical_url: https://ryneandal.github.io/2026/05/22/why-pdfs-are-a-security-nightmare
 permalink: /2026/05/22/why-pdfs-are-a-security-nightmare
 seo:
   description: "PDFs are a security nightmare because they became a mandatory part of online business while they accumulated more features and technical debt over time."
   keywords: "cybersecurity, PDF, security"
 image: /assets/img/2026-05-22-why-pdfs-are-a-security-nightmare/pdf-security-nightmare.jpg
 ---
-
-## Why PDFs Are a Security Nightmare
 
 I’ve spent a decent amount of time looking at malicious Office documents, especially macro-enabled ones. In school, that was one of the more common examples of document-based malware: open the document, enable macros, and suddenly obfuscated VBA code is hijacking your system. That model is easy enough to explain because the suspicious part is right there in the name: the document has macros, macros can execute code. Obviously, that can go badly.
 

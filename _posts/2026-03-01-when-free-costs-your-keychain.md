@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "macOS Terminal One-liners: When Free Costs Your Keychain"
 date: 2026-03-01
 categories: 
@@ -11,15 +12,13 @@ excerpt: >
   Terminal one-liners have become a very popular attack vector for compromising macOS systems. I break down how this one particular one-liner works, and how it exfiltrates your digital life.
 author: Ryne Andal
 tags: ["macOS", "terminal", "security", "bash", "cybersecurity"]
-canonical_url: https://ryneandal.com/2026/03/01/when-free-costs-your-keychain
+canonical_url: https://ryneandal.github.io/2026/03/01/when-free-costs-your-keychain
 permalink: /2026/03/01/when-free-costs-your-keychain
 seo:
   description: "Terminal one-liners have become a very popular attack vector for compromising macOS systems. I break down how this one particular one-liner works, and how it exfiltrates your digital life."
   keywords: "macOS, terminal, security, bash, cybersecurity"
 image: /assets/img/2026-03-01-when-free-costs-your-keychain/berat-bozkurt-YmwZrfblRHg-unsplash.jpg
 ---
-
-## macOS Terminal One-liners: When Free Costs Your Keychain
 
 > **DISCLAIMER**  
 > This is LIVE, in-the-wild malware. **DO NOT** attempt to run/debug any of this malware. If you ignore this warning, be sure not to do so anywhere other than an isolated, sandboxed (and ideally air-gapped) virtual machine.

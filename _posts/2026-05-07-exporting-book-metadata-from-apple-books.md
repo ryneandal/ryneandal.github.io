@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Exporting Book Metadata from Apple Books"
 date: 2026-05-07
 categories: 
@@ -11,15 +12,13 @@ excerpt: >
   I've always used Apple's Books (formerly iBooks) for my reading. One issue I've always run into is no export functionality. I wanted a list of books I already owned, and there was no easy way to do it since I always purchase DRM-free ebooks. This post describes how and why I wrote a simple program to export the metadata for my books.
 author: Ryne Andal
 tags: ["macOS", "Apple Books", "metadata", "export", "Rust"]
-canonical_url: https://ryneandal.com/2026/05/07/exporting-book-metadata-from-apple-books
+canonical_url: https://ryneandal.github.io/2026/05/07/exporting-book-metadata-from-apple-books
 permalink: /2026/05/07/exporting-book-metadata-from-apple-books
 seo:
   description: "I've always used Apple's Books (formerly iBooks) for my reading. One issue I've always run into is no export functionality. I wanted a list of books I already owned, and there was no easy way to do it since I always purchase DRM-free ebooks. This post describes how and why I wrote a simple program to export the metadata for my books."
   keywords: "macOS, Apple Books, metadata, export, Rust"
 image: /assets/img/2026-05-07-exporting-book-metadata-from-apple-books/old-book-spines.jpg
 ---
-
-## Exporting Book Metadata from Apple Books
 
 I've always used Apple's Books (formerly iBooks) for my reading. One issue I've always run into is no export functionality. I've been binging the Horus Heresy series and recently found out they were moving from DRM-free downloads to purchase management via their own app. I wanted to identify which books I did not already import into my library so I did not lose out on any past purchases. There was no easy way to generate a list of books in my library, so I used it as an excuse for learning to use Rust. This post describes how and why I wrote a simple program to export the metadata for my books.
 

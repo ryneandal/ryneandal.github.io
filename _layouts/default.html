@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: " en-US" }}">
+<html lang="{{ site.lang | default: "en-US" }}">
 
 <head>
   <meta charset='utf-8'>
@@ -85,6 +85,10 @@
   <!-- Cloudflare Web Analytics -->
   <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
     data-cf-beacon='{"token": "dd9a60e9fe4e4a3db4159ce72ec2f3cd"}'></script><!-- End Cloudflare Web Analytics -->
+
+  {% if page.mermaid %}
+    {% include mermaid.html %}
+  {% endif %}
 </body>
 
 </html>
