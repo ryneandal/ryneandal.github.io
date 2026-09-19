@@ -27,7 +27,7 @@ This morning I read through GitHub's recent blog post about migrating the [GitHu
 
 1. Real engineering work shows what coding agents can actually do.
 2. Existing behavior and tests make migrations strong candidates for coding agents.
-3. Coding agents can make legacy updates worth doing.
+3. Coding agents can make updates worth doing by reducing development cost.
 
 
 ## Real engineering work shows what coding agents can actually do.
@@ -56,7 +56,7 @@ Existing interfaces, tests, observability metrics, and production behavior give 
 
 GitHub's [Scientist](https://github.blog/developer-skills/application-development/scientist/) is one example of this approach for read-only code paths without side effects. If you can run the existing and refactored code against the same inputs, then you can compare results and timings, and proactively mitigate potential issues before migrating over.
 
-## Coding agents can make legacy updates worth doing.
+##  Coding agents can make updates worth doing by reducing development cost.
 
 Software engineers are often unhappy with the state of production codebases. We're often perfectionists who want to go through and resolve identified technical debt, like a mechanic hearing an aged, well-worn belt squeaking. We know it is structurally sound now and probably will be for some time, but we still want our completed work to be in perfect working order.
 
@@ -67,7 +67,7 @@ Coding agents don't remove the difficult parts of a migration. The planning, spe
 
 Amazon also [reported](https://press.aboutamazon.com/2024/12/new-amazon-q-developer-capabilities-accelerate-large-scale-transformations-of-legacy-workloads) migrating tens of thousands of production applications to Java 17 using Amazon Q Developer, estimating more than 4,500 developer-years saved and $260 million in annual performance-related savings. Take Amazon's own estimates with a healthy dose of salt, but they provide another example of the potential financial incentive of AI-assisted modernization.
 
-### Coding agents are more than faster feature development.
+## Coding agents enable more than just faster feature development.
 
 Most discussions about coding agents focus on how much faster developers can ship the work they would be doing regardless. I have started to look for engineering work that hasn't been done at all because it costs too much.
 
@@ -85,7 +85,7 @@ There is an enormous backlog of this work across all industries:
 
 Engineering organizations should still ask where agents can make their developers faster. They should also ask a second question:
 
-> **What valuable engineering work have we repeatedly deferred because the implementation cost never justified the payoff?**
+> **What valuable engineering work have we denied because the return did not justify the cost?**
 
 If you’ve been putting off a migration because of the cost, but coding agents have you reconsidering, I’d be happy to help you assess or tackle it.
 
